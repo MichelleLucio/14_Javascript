@@ -38,9 +38,9 @@ function runSearch() {
     let filterDate = tableData.filter(function(ufo){
         return ufo.datetime === dateinputValue});
     ////let filterDate = tableData.filter(ufo => ufo.datetime === dateinputValue);
+      console.log(filterDate);
 
-  
-    console.log(filterDate);
+ 
     //select table body & clear data out
     let tbody = d3.select('tbody');
     tbody.text("");
